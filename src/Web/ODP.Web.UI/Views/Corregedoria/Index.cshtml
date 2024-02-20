@@ -1,0 +1,125 @@
+﻿@model IEnumerable<ODP.Web.UI.Models.Corregedoria.InstauracaoViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ano)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CNPJCPF)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RG)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Orgao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Procedimento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Protocolo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Objeto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AtoNormativo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataPublicacao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumeroDIOE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AtoNormativoDecisao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataPublicacaoDecisao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumeroDIOEDecisao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Decisao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InfoAdd)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ano)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CNPJCPF)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RG)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Orgao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Procedimento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Protocolo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Objeto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AtoNormativo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataPublicacao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumeroDIOE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AtoNormativoDecisao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataPublicacaoDecisao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumeroDIOEDecisao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Decisao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InfoAdd)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

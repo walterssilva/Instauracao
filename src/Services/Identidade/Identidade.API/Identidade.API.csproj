@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="MySql.Data" Version="8.3.0" />
+    <PackageReference Include="MySql.EntityFrameworkCore" Version="8.0.0" />
+    <PackageReference Include="MySqlConnector" Version="2.3.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Building Blocks\CGEODP.Core\CGEODP.Core.csproj" />
+    <ProjectReference Include="..\..\..\Building Blocks\CGEODP.WebApi.Core\CGEODP.WebApi.Core.csproj" />
+    <ProjectReference Include="..\Identidade.Domain\Identidade.Domain.csproj" />
+    <ProjectReference Include="..\Identidade.Infra\Identidade.Infra.csproj" />
+  </ItemGroup>
+
+</Project>
